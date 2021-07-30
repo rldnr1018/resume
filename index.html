@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>resume</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/jquery-1.12.4.min.js"></script>
+	<script src="./js/prefixfree.min.js"></script>
+</head>
+<body>
+
+    <header id="header">
+        <div class="bg"></div>
+        <div class="here1">click here <i class="fas fa-location-arrow"></i></div>
+        
+        <nav id="nav">
+            <ul class="depth1">
+                <li><a href="#wrap">About Me</a></li>
+                <li><a href="#wrap2">My Skills</a></li>
+                <li><a href="#">My Portfolio</a></li>
+                <li><a href="#wrap4">Contact Me</a></li>
+                <li class="blank"><a href="#">blank</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <div id="wrap">
+        <section id="sect1">
+            <div class="screen">
+                <ul>
+                    <li>
+                        이름 : 남기욱
+                    </li>
+                    <li>
+                        생년월일 : 1992 - 10 - 18
+                    </li>
+                    <li>
+                        학력 : 서일대학 졸업
+                    </li>
+                    <li>
+                        연락처 : 010 - 7709 - 7725
+                    </li>
+                    <li>
+                        이메일 : rldnr4052@naver.com
+                    </li>
+                </ul>
+                <div class="button"></div>
+                <div class="here2">click here <i class="fas fa-location-arrow"></i></div>
+            </div>
+        </section>
+    </div>
+
+    <div id="wrap2">
+        <section id="sect2">
+            <div class="screen2">
+                <div class="inner">
+                    <div class="html">
+                        <div class="score">
+                            <div class="myscore"></div>
+                        </div>
+                        <p>html5</p>
+                    </div>
+                    <div class="css">
+                        <div class="score">
+                            <div class="myscore"></div>
+                        </div>
+                        <p>css3</p>
+                    </div>
+                    <div class="script">
+                        <div class="score">
+                            <div class="myscore"></div>
+                        </div>
+                        <p>Script</p>
+                    </div>
+                    <div class="jquery">
+                        <div class="score">
+                            <div class="myscore"></div>
+                        </div>
+                        <p>jquery</p>
+                    </div>
+                    <div class="react">
+                        <div class="score">
+                            <div class="myscore"></div>
+                        </div>
+                        <p>react</p>
+                    </div>
+                </div>
+                <div class="button"></div>
+                <div class="here3"><i class="fas fa-location-arrow"></i> click here </div>
+            </div>
+        </section>
+    </div>
+
+    <div id="wrap3">
+        <section id="sect3">
+
+        </section>
+    </div>
+
+    <div id="wrap4">
+        <section id="sect4">
+            <div class="formbox">
+                <form action="#" method="post">
+                    <fieldset>
+                        <legend class="blind">연락처를 남겨주세요.</legend>
+                        <table>
+                            <colgroup>
+                                <col>
+                                <col>
+                            </colgroup>
+                            <tr>
+                                <td><label for="irum">NAME</label></td>
+                                <td>
+                                    <input type="text" name="irum" id="irum">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="phone">CONTECT</label>
+                                </td>
+                                <td>
+                                    <input type="text" name="hp1" id="phone"> -
+                                    <input type="text" name="hp2"> -
+                                    <input type="text" name="hp3">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="email">E-MAIL</label>
+                                </td>
+                                <td>
+                                    <input type="text" name="eid" id="email"> @
+                                    <input type="text" name="edomain">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="memo">MEMO</label>
+                                </td>
+                                <td>
+                                    <textarea name="memo" id="memo"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="attach">ATTACHMENT</label>
+                                </td>
+                                <td>
+                                    <input type="file" id="attach">
+                                </td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                    <div class="btn">
+                        <button type="submit">SEND</button>
+                        <button type="reset">CANCEL</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+</html>
