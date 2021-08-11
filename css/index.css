@@ -1,8 +1,9 @@
 @charset "utf-8";
 
 body{background-image: url(../img/bg\ pt.jpg);
-    
+      overflow-x: hidden;
 }
+
 #header{position: relative;}
 
 #header .bg{ width: 100vw; height: 100vh;
@@ -47,7 +48,7 @@ body{background-image: url(../img/bg\ pt.jpg);
     transition: all 0.4s;
 }
 
-#nav .depth1 li:last-child{color: #000; font-size: 40px; opacity: 0;}
+#nav .depth1 li:last-child{color: #000; font-size: 40px; opacity: 0; cursor: pointer;}
 
 #nav .depth1.on {
     top: 32%; left: 40%;
@@ -125,7 +126,7 @@ body{background-image: url(../img/bg\ pt.jpg);
 
 
 #sect2 .screen2 {width: 500px; height: 80vh;
-  position: absolute; top: 215%; left: 37%;
+  position: absolute; top: 210%; left: 37%;
   border: 6px solid #197AA7;
   border-radius:30px;
   transform: rotate(-90deg);
@@ -296,4 +297,18 @@ body{background-image: url(../img/bg\ pt.jpg);
   font-weight: bold;
   border:2px solid #FBEA24;
   border-radius: 3px;
+}
+
+
+.gotop {
+  position:fixed; 
+  bottom: 8%; right: 5%; 
+  z-index: 9999; 
+  font-size: 15px;
+  border: 5px solid #197AA7;
+  color: #FBEA24;
+  padding: 10px;
+  border-radius: 10px;
+  display: none;
+  
 }
