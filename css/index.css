@@ -68,7 +68,7 @@ body{background-image: url(../img/bg\ pt.jpg);
 
 #sect1 .screen{position: relative;}
 
-#sect1 .screen {width: 500px; height: 75vh;
+#sect1 .screen {width: 500px; height: 80vh;
   position: absolute; top: 100px; left: 37%;
   border: 6px solid #197AA7;
   border-radius:30px;
@@ -76,7 +76,7 @@ body{background-image: url(../img/bg\ pt.jpg);
 }
 
 #sect1 .screen ul {
-  width: 400px; height: 65vh;
+  width: 400px; height: 60vh;
   border: 6px solid #197AA7;
   position: absolute; top: 40px; left: 9.5%;
   border-radius: 10px;
