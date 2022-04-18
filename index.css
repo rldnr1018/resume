@@ -1,0 +1,314 @@
+@charset "utf-8";
+
+body{background-image: url(../img/bg\ pt.jpg);
+      overflow-x: hidden;
+}
+
+#header{position: relative;}
+
+#header .bg{ width: 100vw; height: 100vh;
+    background-image: url(../img/man-4807395_1920.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#header .here1 {
+    font-size: 30px;
+    color: #FBEA24;
+    position: absolute;
+    top: 41%; left: 26%;
+    animation: flash 2.5s infinite;
+}
+
+#header .here1 i {transform:rotate(95deg);}
+
+@keyframes flash {
+    from,
+    50%,
+    to {
+      opacity: 1;
+    }
+  
+    25%,
+    75% {
+      opacity: 0;
+    }
+  }
+
+
+#nav .depth1 {
+    position: absolute;
+    /* top: 32%; left: 40%; */
+    top: 53%; left: 35%;
+    color: #FBEA24;
+    line-height: 0;
+    transform: rotate(45deg);
+    font-size: 25px;
+    opacity: 0;
+    transition: all 0.4s;
+}
+
+#nav .depth1 li:last-child{color: #000; font-size: 40px; opacity: 0; cursor: pointer;}
+
+#nav .depth1.on {
+    top: 32%; left: 40%;
+    line-height: 2;
+    opacity: 1;
+}
+
+
+
+/* sect1 */
+
+
+#wrap {width: 100vw; height: 100vh;
+}
+
+#sect1 {position: relative;}
+
+#sect1 .screen{position: relative;}
+
+#sect1 .screen {width: 500px; height: 80vh;
+  position: absolute; top: 100px; left: 37%;
+  border: 6px solid #197AA7;
+  border-radius:30px;
+
+}
+
+#sect1 .screen ul {
+  width: 400px; height: 65vh;
+  border: 6px solid #197AA7;
+  position: absolute; top: 40px; left: 9.5%;
+  border-radius: 10px;
+}
+
+
+#sect1 .screen ul li {
+  font-size: 20px;
+  font-weight: bold;
+  opacity: 0;
+  transition: all 0.6s;
+  background-color: #FBEA24;
+  padding-top: 30px;
+  padding-bottom: 62.5px;
+} 
+
+#sect1 .screen ul li.on{opacity: 1;}
+
+#sect1 .screen .button {
+  position: absolute; top: 91%; left: 42%;
+  border: 4px solid #197AA7;
+  width: 80px; height: 40px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#sect1 .screen .here2 {
+  font-size: 30px;
+  color: #FBEA24;
+  position: absolute;
+  top: 101%; left: 7%;
+  animation: flash 2.5s infinite;
+}
+
+
+
+/* sect1 */
+
+
+
+
+/* sect2 */
+
+
+#wrap2 {width: 100vw; height: 100vh;
+}
+
+
+#sect2 .screen2 {width: 500px; height: 80vh;
+  position: absolute; top: 210%; left: 37%;
+  border: 6px solid #197AA7;
+  border-radius:30px;
+  transform: rotate(-90deg);
+}
+
+#sect2 .screen2 .inner {
+  width: 400px; height: 65vh;
+  border: 6px solid #197AA7;
+  position: absolute; top: 40px; left: 9.5%;
+  border-radius: 10px;
+  
+}
+
+#sect2 .screen2 .inner > div {
+  border: 1px solid #FBEA24;
+  width: 370px; height: 80px;
+  margin: 35px 0;
+  opacity: 0;
+  transition: all 0.6s;
+  position: relative;
+}
+
+#sect2 .screen2 .inner > div.on{
+  opacity: 1;
+}
+
+#sect2 .screen2 .inner > div > p {
+  transform: rotate(90deg);
+  font-size: 18px;
+  font-weight: bold;
+  color: #197AA7;
+  float: left; width: 20%;
+  position: absolute;
+  top: 40px; left: -25px;
+  
+}
+
+#sect2 .screen2 .inner > div > .score {
+  height: 100%;
+  transition: all 1s;
+  width: 100%;
+  position: relative;
+}
+
+
+#sect2 .screen2 .inner > div.html > .score {width: 0%; background-color: #FBEA24; transition-delay: 0s;}
+
+#sect2 .screen2 .inner > div.css > .score {width: 0%; background-color: #FBEA24; transition-delay: 0s;}
+
+#sect2 .screen2 .inner > div.script > .score {width: 0%; background-color: #FBEA24; transition-delay: 0s;}
+
+#sect2 .screen2 .inner > div.jquery > .score {width: 0%; background-color: #FBEA24; transition-delay: 0s;}
+
+#sect2 .screen2 .inner > div.react > .score {width: 0%; background-color: #FBEA24; transition-delay: 0s;}
+
+#sect2 .screen2 .inner > div.html.on > .score {width: 80%; background-color: #FBEA24; transition-delay: 0.6s;}
+
+#sect2 .screen2 .inner > div.css.on > .score {width: 80%; background-color: #FBEA24; transition-delay: 0.5s;}
+
+#sect2 .screen2 .inner > div.script.on > .score {width: 60%; background-color: #FBEA24; transition-delay: 0.4s;}
+
+#sect2 .screen2 .inner > div.jquery.on > .score {width: 60%; background-color: #FBEA24; transition-delay: 0.3s;}
+
+#sect2 .screen2 .inner > div.react.on > .score {width: 50%; background-color: #FBEA24; transition-delay: 0.2s;}
+
+
+#sect2 .screen2 .inner > div > .score > .myscore {
+  position: absolute; top:0; left: 0;
+  width: 100%; text-align: center;
+  color: #000;
+  font-size: 15px;
+  height: 100%;
+  transform: rotate(90deg);
+  font-weight: bold;
+}
+
+
+#sect2 .screen2 .button {
+  position: absolute; top: 91%; left: 42%;
+  border: 4px solid #197AA7;
+  width: 80px; height: 40px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#sect2 .screen2 .here3 {
+  font-size: 30px;
+  color: #FBEA24;
+  position: absolute;
+  top: 110%; left: 30%;
+  animation: flash 2.5s infinite;
+  transform: rotate(90deg);
+}
+
+#sect2 .screen2 .here3 i { transform: rotate(260deg);}
+
+
+
+/* sect2 */
+
+
+
+/* sect3 */
+
+
+#wrap3 {width: 100vw; height: 100vh;}
+
+
+/* sect3 */
+
+
+/* sect4 */
+
+#wrap4 {width: 100vw; height: 100vh;
+  position: relative;
+}
+
+
+#sect4 {position: absolute; top: 50%; left: 25%; transform: translateY(-50%);
+}
+#sect4 col:nth-child(1) {width: 50%;}
+#sect4 col:nth-child(2) {width: 100%;}
+#sect4 td {padding: 10px 10px; font-size: 20px;
+  color: #FBEA24; font-weight: bold;
+}
+
+#sect4 .formbox {
+  border: 10px solid #197AA7;
+  width: 1000px; height: 700px;
+  border-radius: 10px;
+}
+
+#sect4 .formbox table {
+ margin-top: 60px;
+ line-height: 3;
+}
+
+#sect4 td:nth-child(1) {
+  text-align: center;
+}
+
+
+#sect4 .formbox input[type="text"] {
+  border: 3px solid #FBEA24;
+  width: 150px; height: 35px;
+  background-color: #fff;
+  opacity: 0.9;
+}
+
+#sect4 .formbox #memo {
+  width: 300px; height: 150px;
+  border: 3px solid #FBEA24;
+  opacity: 0.9;
+}
+
+#sect4 .formbox input[type="file"]{
+  font-weight: bold;
+}
+
+
+#sect4 .formbox .btn {text-align: center;
+  
+}
+
+#sect4 .formbox .btn button {
+  font-size: 15px; color: #FBEA24;
+  width: 80px; height: 40px;
+  font-weight: bold;
+  border:2px solid #FBEA24;
+  border-radius: 3px;
+}
+
+
+.gotop {
+  position:fixed; 
+  bottom: 8%; right: 5%; 
+  z-index: 9999; 
+  font-size: 15px;
+  border: 5px solid #197AA7;
+  color: #FBEA24;
+  padding: 10px;
+  border-radius: 10px;
+  display: none;
+  
+}
